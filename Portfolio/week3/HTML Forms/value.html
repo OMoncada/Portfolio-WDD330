@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value Calculator</title>
+    <link rel="stylesheet" href="value.css"> <!-- Llama al archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Example Form Layout using CSS Grid</h1>
+    </header>
+    <main>
+        <h3>Future Value</h3>
+        <div class="gridform">
+            <label for="principle">Principle:</label>
+            <input type="text" id="principle" name="principal" required>
+            <label for="confirmPrincipal">Confirm Principle:</label>
+            <input type="text" id="confirmPrincipal" required>
+            <label for="annualrate">Annual rate:</label>
+            <input type="text" id="annualrate" placeholder=".08" required>
+            <label for="years">Years:</label>
+            <input type="text" id="years" required>
+            <label for="periods">Periods:</label>
+            <input type="text" id="periods" required>
+        </div>
+        <button id="computeButton">Compute Future Value</button>
+        <hr> Future Value: <span id="output"></span>
+    </main>
+    <footer>
+        &copy;<span id="theyear"></span> • Antonia Francesca • Utah • WDD
+    </footer>
+
+    <script src="value.js"></script> <!-- Llama al archivo JavaScript -->
+</body>
+
+</html>

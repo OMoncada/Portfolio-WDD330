@@ -1,0 +1,46 @@
+/* Estilo para centrar el div .box en el body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Fondo del body */
+}
+
+/* Estilo para el div .box */
+.box {
+    background-color: #3498db;
+    /* Color de fondo */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    /* Aplicar la animación myanima */
+    animation: myanima 3s infinite alternate;
+}
+
+/* Definir la animación myanima con @keyframes */
+@keyframes myanima {
+    0% {
+        transform: translateY(0);
+        background-color: #3498db;
+        /* Color original */
+    }
+
+    50% {
+        transform: translateX(200px) translateY(-100px) scale(1.2);
+        background-color: #e74c3c;
+        /* Cambiar el color a rojo */
+        color: #fff;
+    }
+
+    100% {
+        transform: translateX(-100px) translateY(-100px) rotate(15deg);
+        background-color: #2ecc71;
+        /* Cambiar el color a verde */
+    }
+}
